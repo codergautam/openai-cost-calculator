@@ -1,6 +1,6 @@
 {
   "name": "openai-cost-calculator",
-  "version": "1.0.01",
+  "version": "1.0.1",
   "description": "Easily calculate the cost of your OpenAI Usage",
   "main": "src/index.js",
   "scripts": {
