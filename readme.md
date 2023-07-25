@@ -88,6 +88,9 @@ With this approach, you can estimate the cost of using OpenAI models in your pro
 
 **Usage:**
 ```javascript
+// 1st Param - Model
+// 2nd Param - Number of tokens
+// 3rd Param - Operation, can be either 'Training' or 'Usage'
 const cost = costCalculator.calculateFineTuningModelCost('ada', 10000, 'Training');
 console.log(cost);
 ```
@@ -104,6 +107,8 @@ console.log(cost);
 
 **Usage:**
 ```javascript
+// 1st Param - Model
+// 2nd Param - Number of tokens
 const cost = costCalculator.calculateEmbeddingModelCost('ada', 10000);
 console.log(cost);
 ```
@@ -120,7 +125,9 @@ console.log(cost);
 
 **Usage:**
 ```javascript
-const cost = costCalculator.calculateImageModelCost('512x512', 20);
+// 1st Param - Resolution
+// 2nd Param - Count of Images
+const cost = costCalculator.calculateImageModelCost('512x512', 1);
 console.log(cost);
 ```
 
@@ -136,6 +143,8 @@ console.log(cost);
 
 **Usage:**
 ```javascript
+// 1st Param - Model
+// 2nd Param - Duration in seconds
 const cost = costCalculator.calculateAudioModelCost('whisper-1', 60);
 console.log(cost);
 ```
